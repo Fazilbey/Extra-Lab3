@@ -84,13 +84,13 @@ while True:
     n = int(input("Enter your choice "))
     match n:
         case 1:
-            name = input("Enter your name: ")
-            surname = input("Enter your surname: ")
+            name = input("Enter your name:  ")
+            surname = input("Enter your surname:  ")
             person = BankAccount(name, surname)
             users.append(person)
         case 2:
-            name = input("Enter your name:  ")
-            surname = input("Enter your surname:  ")
+            name = input("Enter your name: ")
+            surname = input("Enter your surname: ")
             user = next(u for u in users if (u.name == name and u.surname == surname))
             if user is not None:
                 while True:
